@@ -5,6 +5,6 @@
 ### Brain Even:
 Answer "yes" if the number is even, otherwise answer "no".
 ```
-$brain-even
+$ brain-even
 ```
 <a href="https://asciinema.org/a/e51FEvEggfeFv63KlfwSxb456" target="_blank"><img src="https://asciinema.org/a/e51FEvEggfeFv63KlfwSxb456.svg" /></a>
