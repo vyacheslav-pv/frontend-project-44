@@ -6,14 +6,14 @@ export const getRandomIntInclusive = (min, max) => {
   return Math.floor(Math.random() * (max2 - min2 + 1)) + min2;
 };
 
-export const startGame = (gameName, taskGame, generatorQuestion) => {
+export const startGame = (gameName, taskGame, checkQuestionAnswer) => {
   console.log(`${gameName}\n\nWelcome to the Brain Games!`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(taskGame);
 
   for (let i = 1; i <= 3; i += 1) {
-    const [question, correctAnswer] = generatorQuestion();
+    const [question, correctAnswer] = checkQuestionAnswer();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === correctAnswer) {
