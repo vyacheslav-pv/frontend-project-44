@@ -3,7 +3,7 @@ import { getRandomIntInclusive } from '../index.js';
 const gameName = 'brain-calc';
 const taskGame = 'What is the result of the expression?';
 
-const generatorQuestion = () => {
+const checkQuestionAnswer = () => {
   const number1 = getRandomIntInclusive(1, 100);
   const number2 = getRandomIntInclusive(1, 100);
 
@@ -29,4 +29,4 @@ const generatorQuestion = () => {
   const correctAnswer = result;
   return [`${question}`, `${correctAnswer}`];
 };
-export { gameName, taskGame, generatorQuestion };
+export { gameName, taskGame, checkQuestionAnswer };
