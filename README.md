@@ -15,3 +15,10 @@ What is the result of the expression?
 $ brain-calc
 ```
 <a href="https://asciinema.org/a/AFzU21jiJrIH8bEti7O2uCdTd" target="_blank"><img src="https://asciinema.org/a/AFzU21jiJrIH8bEti7O2uCdTd.svg" /></a>
+
+### вrain-gcd:
+Find the greatest common divisor of given numbers.
+```
+$ brain-gcd
+```
+<a href="https://asciinema.org/a/88zothSyUZqkwqmRdcnbLSc1u" target="_blank"><img src="https://asciinema.org/a/88zothSyUZqkwqmRdcnbLSc1u.svg" /></a>
