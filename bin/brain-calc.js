@@ -2,6 +2,6 @@
 
 import { startGame } from '../src/index.js';
 
-import { gameName, taskGame, generatorQuestion } from '../src/games/calc.js';
+import { gameName, taskGame, checkQuestionAnswer } from '../src/games/calc.js';
 
-startGame(gameName, taskGame, generatorQuestion);
+startGame(gameName, taskGame, checkQuestionAnswer);
