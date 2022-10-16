@@ -22,3 +22,10 @@ Find the greatest common divisor of given numbers.
 $ brain-gcd
 ```
 <a href="https://asciinema.org/a/88zothSyUZqkwqmRdcnbLSc1u" target="_blank"><img src="https://asciinema.org/a/88zothSyUZqkwqmRdcnbLSc1u.svg" /></a>
+
+### brain-progression:
+What number is missing in the progression?
+```
+$ brain-progression
+```
+<a href="https://asciinema.org/a/MSWIFXTntB4Tyye8qpEocEdDi" target="_blank"><img src="https://asciinema.org/a/MSWIFXTntB4Tyye8qpEocEdDi.svg" /></a>
