@@ -16,13 +16,11 @@ const checkQuestionAnswer = () => {
 
     while (divider <= number / 2) {
       if (number % divider === 0) {
-        const result = 'no';
-        return result;
+        return 'no';
       }
       divider += 1;
     }
-    const result = 'yes';
-    return result;
+    return 'yes';
   };
 
   const correctAnswer = isPrime();
