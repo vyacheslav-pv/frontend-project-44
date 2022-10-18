@@ -11,7 +11,7 @@ make install
 Mind Games is a set of five console games based on the popular mobile brain-pumping apps.
 
 ## Game list
-* вrain-calc
+* brain-calc
 * вrain-gcd
 * brain-progression
 * brain-prime
