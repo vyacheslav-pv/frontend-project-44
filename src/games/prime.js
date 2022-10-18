@@ -4,34 +4,29 @@ const gameName = 'brain-prime';
 const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const checkQuestionAnswer = () => {
-  const number1 = getRandomIntInclusive(1, 20);
+  const number = getRandomIntInclusive(1, 20);
 
   const isPrime = () => {
-    if (number1 < 2) {
-      return false;
+    if (number < 2) {
+      const result = 'no';
+      return result;
     }
 
     let divider = 2;
 
-    while (divider <= number1 / 2) {
-      if (number1 % divider === 0) {
-        return false;
+    while (divider <= number / 2) {
+      if (number % divider === 0) {
+        const result = 'no';
+        return result;
       }
-
       divider += 1;
     }
-    return true;
+    const result = 'yes';
+    return result;
   };
 
-  let result;
-
-  if (isPrime() === false) {
-    result = 'no';
-  } else {
-    result = 'yes';
-  }
-  const correctAnswer = result;
-  const question = number1;
+  const correctAnswer = isPrime();
+  const question = number;
   return [`${question}`, `${correctAnswer}`];
 };
 export { gameName, taskGame, checkQuestionAnswer };
