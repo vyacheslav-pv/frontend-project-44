@@ -19,7 +19,7 @@ const checkQuestionAnswer = () => {
     }
   }
   const correctAnswer = progressionMember2;
-  const question = result;
+  const question = result.slice(1);
   return [`${question}`, `${correctAnswer}`];
 };
 export { gameName, taskGame, checkQuestionAnswer };
