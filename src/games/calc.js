@@ -1,6 +1,6 @@
-import { getRandomIntInclusive } from '../index.js';
+import startGame from '../index.js';
+import getRandomIntInclusive from '../getRandomIntInclusive.js';
 
-const gameName = 'brain-calc';
 const taskGame = 'What is the result of the expression?';
 
 const checkQuestionAnswer = () => {
@@ -8,7 +8,7 @@ const checkQuestionAnswer = () => {
   const number2 = getRandomIntInclusive(1, 100);
 
   const operators = ['+', '-', '*'];
-  const randomOperator = operators[getRandomIntInclusive(0, 2)];
+  const randomOperator = operators[getRandomIntInclusive(0, operators.length - 1)];
 
   const question = `${number1} ${randomOperator} ${number2}`;
 
@@ -29,4 +29,4 @@ const checkQuestionAnswer = () => {
   const correctAnswer = result;
   return [`${question}`, `${correctAnswer}`];
 };
-export { gameName, taskGame, checkQuestionAnswer };
+export default () => startGame(taskGame, checkQuestionAnswer);

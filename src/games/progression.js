@@ -1,6 +1,6 @@
-import { getRandomIntInclusive } from '../index.js';
+import startGame from '../index.js';
+import getRandomIntInclusive from '../getRandomIntInclusive.js';
 
-const gameName = 'brain-progression';
 const taskGame = 'What number is missing in the progression?';
 
 const checkQuestionAnswer = () => {
@@ -22,4 +22,4 @@ const checkQuestionAnswer = () => {
   const question = result.slice(1);
   return [`${question}`, `${correctAnswer}`];
 };
-export { gameName, taskGame, checkQuestionAnswer };
+export default () => startGame(taskGame, checkQuestionAnswer);

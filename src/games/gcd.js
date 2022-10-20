@@ -1,6 +1,6 @@
-import { getRandomIntInclusive } from '../index.js';
+import startGame from '../index.js';
+import getRandomIntInclusive from '../getRandomIntInclusive.js';
 
-const gameName = 'brain-gcd';
 const taskGame = 'Find the greatest common divisor of given numbers.';
 
 const checkQuestionAnswer = () => {
@@ -19,4 +19,4 @@ const checkQuestionAnswer = () => {
   const correctAnswer = number1 + number2;
   return [`${question}`, `${correctAnswer}`];
 };
-export { gameName, taskGame, checkQuestionAnswer };
+export default () => startGame(taskGame, checkQuestionAnswer);
