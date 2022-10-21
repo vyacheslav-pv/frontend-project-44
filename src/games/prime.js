@@ -21,7 +21,7 @@ const isPrime = (num) => {
 };
 
 const checkQuestionAnswer = () => {
-  const number = getRandomIntInclusive(1, 20);
+  const number = getRandomIntInclusive(1, 50);
 
   const correctAnswer = isPrime(number);
   const question = number;

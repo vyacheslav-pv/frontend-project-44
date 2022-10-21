@@ -3,9 +3,7 @@ import getRandomIntInclusive from '../getRandomIntInclusive.js';
 
 const taskGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const checkQuestionAnswer = () => {
-  const number = getRandomIntInclusive(1, 50);
-
+const isEven = (number) => {
   let result;
 
   if (number % 2 === 0) {
@@ -13,8 +11,13 @@ const checkQuestionAnswer = () => {
   } else {
     result = 'no';
   }
+  return result;
+};
 
-  const correctAnswer = result;
+const checkQuestionAnswer = () => {
+  const number = getRandomIntInclusive(1, 50);
+
+  const correctAnswer = isEven(number);
   const question = number;
   return [`${question}`, `${correctAnswer}`];
 };
