@@ -15,7 +15,7 @@ const isEven = (number) => {
 };
 
 const checkQuestionAnswer = () => {
-  const number = getRandomIntInclusive(1, 50);
+  const number = getRandomIntInclusive(1, 60);
 
   const correctAnswer = isEven(number);
   const question = number;
