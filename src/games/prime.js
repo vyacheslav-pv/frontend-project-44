@@ -21,10 +21,9 @@ const isPrime = (num) => {
 };
 
 const checkQuestionAnswer = () => {
-  const number = getRandomIntInclusive(1, 50);
+  const question = getRandomIntInclusive(1, 50);
+  const correctAnswer = isPrime(question);
 
-  const correctAnswer = isPrime(number);
-  const question = number;
   return [`${question}`, `${correctAnswer}`];
 };
 export default () => startGame(taskGame, checkQuestionAnswer);
