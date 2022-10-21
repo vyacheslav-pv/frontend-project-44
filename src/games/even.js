@@ -15,10 +15,10 @@ const isEven = (number) => {
 };
 
 const checkQuestionAnswer = () => {
-  const num = getRandomIntInclusive(1, 60);
+  const number = getRandomIntInclusive(1, 60);
 
-  const correctAnswer = isEven(num);
-  const question = num;
+  const correctAnswer = isEven(number);
+  const question = number;
   return [`${question}`, `${correctAnswer}`];
 };
 export default () => startGame(taskGame, checkQuestionAnswer);
