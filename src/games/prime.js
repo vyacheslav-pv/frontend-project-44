@@ -20,9 +20,8 @@ const isPrime = (num) => {
 };
 
 const checkQuestionAnswer = () => {
-  const number = checkQuestionAnswer();
-  const question = number;
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
+  const question = getRandomIntInclusive(1, 60);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [`${question}`, `${correctAnswer}`];
 };
