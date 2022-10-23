@@ -3,18 +3,7 @@ import getRandomIntInclusive from '../getRandomIntInclusive.js';
 
 const taskGame = 'Find the greatest common divisor of given numbers.';
 
-const findGCD = (number1, number2) => {
-  let num1 = number1;
-  let num2 = number2;
-  while (num1 && num2) {
-    if (num1 > num2) {
-      num1 %= num2;
-    } else {
-      num2 %= num1;
-    }
-  }
-  return num1 + num2;
-};
+const findGCD = (num1, num2) => (num2 === 0 ? num1 : findGCD(num2, num1 % num2));
 
 const checkQuestionAnswer = () => {
   const number1 = getRandomIntInclusive(1, 100);

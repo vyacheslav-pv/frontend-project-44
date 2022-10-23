@@ -5,24 +5,23 @@ const taskGame = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 const isPrime = (num) => {
   if (num < 2) {
-    const result = 'no';
-    return result;
+    return false;
   }
 
   let divider = 2;
 
   while (divider <= num / 2) {
     if (num % divider === 0) {
-      return 'no';
+      return false;
     }
     divider += 1;
   }
-  return 'yes';
+  return true;
 };
 
 const checkQuestionAnswer = () => {
   const question = getRandomIntInclusive(1, 50);
-  const correctAnswer = isPrime(question);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [`${question}`, `${correctAnswer}`];
 };

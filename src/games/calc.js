@@ -4,21 +4,15 @@ import getRandomIntInclusive from '../getRandomIntInclusive.js';
 const taskGame = 'What is the result of the expression?';
 
 const calculate = (number1, number2, operator) => {
-  let result;
   switch (operator) {
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      result = number1 * number2;
-      break;
-    default:
-      result = 'unknown expression';
+      return number1 * number2;
+    default: throw new Error('unknown expression');
   }
-  return result;
 };
 
 const checkQuestionAnswer = () => {
